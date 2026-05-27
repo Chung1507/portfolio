@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinh Quoc Chung | Backend Developer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+    <div class="nav-container">
+        <a href="#" class="logo">DQC.</a>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<header class="hero">
+    <div class="hero-container">
+        <div class="hero-text">
+            <h1>Dinh Quoc Chung</h1>
+            <p class="subtitle">Backend Developer</p>
+            <p class="tagline">Building robust, scalable, and efficient server-side architectures.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+        <div class="hero-avatar">
+            <img src="my-photo.jpg" alt="Dinh Quoc Chung" class="profile-img" onerror="this.src='https://via.placeholder.com/250'">
+        </div>
+    </div>
+</header>
+
+<section id="about" class="section">
+    <h2>/ about me</h2>
+    <p>I am a backend developer passionate about designing efficient databases and structured API architectures. I thrive on solving complex logic problems and optimization on the server side.</p>
+</section>
+
+<section id="skills" class="section gray-bg">
+    <h2>/ tech skills</h2>
+    <div class="skills-grid">
+        <div class="skill-card"><h3>Java Spring Boot</h3></div>
+        <div class="skill-card"><h3>SQL Databases</h3></div>
+        <div class="skill-card"><h3>HTML5 & CSS3</h3></div>
+        <div class="skill-card"><h3>Git & Workflow</h3></div>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <h2>/ systems architecture</h2>
+    <div class="projects-grid">
+        <div class="project-card" onclick="openModal('travel')">
+            <span class="tech-tag">Java Spring Boot + SQL</span>
+            <h3>Travelgroupsystem</h3>
+            <p>A group travel planning system handling user coordination, dynamic itinerary updates, and relational database management.</p>
+            <span class="more-link">View Architecture Details →</span>
+        </div>
+        <div class="project-card" onclick="openModal('study')">
+            <span class="tech-tag">Java Spring Boot + MySQL</span>
+            <h3>Studyhub</h3>
+            <p>An educational platform backbone focused on course delivery, secure authentication, and student progress tracking systems.</p>
+            <span class="more-link">View Architecture Details →</span>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section gray-bg">
+    <h2>/ get in touch</h2>
+    <p>Looking for a solid backend engineer? Let's connect.</p>
+    <p class="email">Email: <a href="mailto:chung.dq.placeholder@gmail.com">chung.dq.placeholder@gmail.com</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2026 Dinh Quoc Chung. All rights reserved.</p>
+</footer>
+
+<div id="projectModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h3 id="modalTitle">Project Title</h3>
+        <p id="modalDescription">Detailed description goes here.</p>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
