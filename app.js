@@ -1,12 +1,18 @@
 const projectDetails = {
-travel: {
-title: "Travelgroupsystem Architecture",
-desc: "Backend Details:<br>• Framework: Java Spring Boot<br>• Database: MySQL/PostgreSQL relational design<br>• Features: Implemented REST APIs for group dynamic creation, relational database schema optimization to prevent data duplication, and transaction management to secure booking updates."
-},
-study: {
-title: "Studyhub Backbone Architecture",
-desc: "Backend Details:<br>• Framework: Java Spring Boot with Spring Security<br>• Database: Highly indexed SQL database<br>• Features: Built robust role-based access control (RBAC) for Teachers and Students, optimized query execution times for course logs, and constructed structured JSON API responses."
-}
+    travel: {
+        title: "Travelgroupsystem Architecture",
+        desc: "<h4>Key Architecture & Responsibilities:</h4>" +
+            "• Designed and optimized relational database schemas (MySQL) with over 15 tables, ensuring data integrity and strict 3NF normalization.<br>" +
+            "• Built secure RESTful APIs using <b>Java Spring Boot</b> to manage group configurations, real-time member coordination, and dynamic travel itineraries.<br>" +
+            "• Utilized <b>Spring Data JPA</b> and Hibernate for efficient object-relational mapping, custom JPQL queries, and database transaction handling."
+    },
+    study: {
+        title: "Studyhub Backbone Architecture",
+        desc: "<h4>Key Architecture & Responsibilities:</h4>" +
+            "• Implemented robust authentication and authorization mechanisms using <b>Spring Security</b> and JWT (JSON Web Tokens) for role-based access control (Admin, Teacher, Student).<br>" +
+            "• Optimized complex SQL query performance and database indexing, reducing API response times by 30% for high-frequency endpoints.<br>" +
+            "• Designed clear and comprehensive API documentation and handled global exception mapping to ensure system stability."
+    }
 };
 
 function openModal(projectKey) {
